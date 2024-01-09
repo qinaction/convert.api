@@ -1,0 +1,31 @@
+mode: "release"
+server:
+  AppName: "convert.api"
+  address: "0.0.0.0"
+  port: "6105"
+log:
+  AccessKeyID: "xxx"
+  AccessKeySecret: "xxx"
+  LogStore: "outreach-log"
+  Endpoint: "cn-hangzhou.log.aliyuncs.com"
+  Project: "outreach-project-03"
+  LookAddr: "https://xx.xx.aliyun.com/lognext/project/outreach-project-03/logsearch/outreach-log"
+databases:
+  mysql:
+    - username: "develop"
+      password: "develop123"
+      address: "XX.xx.com:6033"
+      dbname: "claim_new"
+      asname: "claim_new"
+      maxOpenConns: 500
+  redis:
+    - Address: "192.168.3.193"
+      Port: 6379
+      Db: 0
+      Password: "uniondrug@123"
+      PoolSize: 10
+      MinIdleConns: 5
+      DialTimeout: 5
+      asname: "redis"
+host:
+  ossUpload: "http://XX-XX-XX-api.turboradio.cn"
